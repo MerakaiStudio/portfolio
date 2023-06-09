@@ -1,0 +1,41 @@
+.project-card-container {
+    background-color: #023535;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 220px;
+    transition: all 400ms ease;
+    position: relative;
+
+    a {
+        outline: none;
+        text-decoration: none;
+        padding: 2px 1px 0;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+
+        img {
+            opacity: 40%;
+            transition: all 400ms ease;
+        }
+
+        p {
+            color: #fff;
+            display: block;
+            position: fixed;
+            top: 10%;
+            left: 40%;
+        }
+    }
+
+    img {
+        border-radius: 20px;
+        height: 100%;
+        width: 100%;
+    }
+
+    p {
+        display: none;
+    }
+}

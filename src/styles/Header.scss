@@ -1,0 +1,172 @@
+header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    height: 80vh;
+    min-height: 600px;
+    max-width: 100%;
+    display: flex;
+}
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0 5% 0 5%;
+}
+
+.header-content {
+    margin-top: 100px;
+}
+
+.header-title {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.header-subtitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    height: 100%;
+}
+
+.header-mono {
+    font-size: 1rem;
+    letter-spacing: 5px;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.header-logo {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 60%;
+    height: 60%;
+
+    @media (max-width: 1150px) {
+      width: 40%;
+      height: 40%;
+    }
+
+    @media (max-width: 1030px) {
+      display: none;
+    }
+}
+
+// Meeting words
+
+.hello-content {
+    width:237px;
+    font-size:36px;
+    line-height:40px;
+    font-family:'Muli';
+    color:#ecf0f1;
+    height:40px;
+    position: relative;
+
+    @media (max-width: 500px) {
+      padding-left: 40px;
+    }
+    
+    &:before {
+      content:'[';
+      position:absolute;
+      left:-30px;
+      line-height:40px;
+
+      @media (max-width: 500px) {
+        left: 0;
+      }
+    }
+
+    &:after {
+      content:']';
+      position:absolute;
+      right:-30px;
+      line-height:40px;
+
+      @media (max-width: 500px) {
+        right: -1;
+      }
+    }
+    
+    &:after, &:before {
+      color:#16a085;
+      font-size:42px;
+      animation:2s linear 0s normal none infinite opacity;
+      -webkit-animation:2s ease-out 0s normal none infinite opacity;
+      -moz-animation:2s ease-out 0s normal none infinite opacity;
+      -o-animation:2s ease-out 0s normal none infinite opacity;
+    }
+
+    p {
+        display:inline;
+        float:left;
+        margin:0;
+      }
+      
+      ul {
+        margin-top:0;
+        padding-left:110px;
+        text-align:left;
+        list-style:none;
+        animation:6s linear 0s normal none infinite change;
+        -webkit-animation:6s linear 0s normal none infinite change;
+        -moz-animation:6s linear 0s normal none infinite change;
+        -o-animation:6s linear 0s normal none infinite change;
+      }
+      
+      ul li {
+        line-height:40px;
+        margin:0;
+      }
+      
+      @-webkit-keyframes opacity {
+        0%   {opacity:0;}
+        50%  {opacity:1;}
+        100% {opacity:0;}
+      }
+      @keyframes opacity {
+        0%   {opacity:0;}
+        50%  {opacity:1;}
+        100% {opacity:0;}
+      }
+      
+      @-webkit-keyframes change {
+        0%   {margin-top:0;}
+        15%  {margin-top:0;}
+        25%  {margin-top:-40px;}
+        40%  {margin-top:-40px;}
+        50%  {margin-top:-80px;}
+        65%  {margin-top:-80px;}
+        75%  {margin-top:-40px;}
+        85%  {margin-top:-40px;}
+        100% {margin-top:0;}
+      }
+      @keyframes change {
+        0%   {margin-top:0;}
+        15%  {margin-top:0;}
+        25%  {margin-top:-40px;}
+        40%  {margin-top:-40px;}
+        50%  {margin-top:-80px;}
+        65%  {margin-top:-80px;}
+        75%  {margin-top:-40px;}
+        85%  {margin-top:-40px;}
+        100% {margin-top:0;}
+      }
+  }
+  
+  .visible {
+    float:left;
+    font-weight:600;
+    overflow:hidden;
+    height:40px;   
+  }
+  
+  
