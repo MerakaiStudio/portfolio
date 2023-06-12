@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import '@styles/Experience.scss'
 import JobPosition from './labels/JobPosition'
 import { ColorBorderButton } from './buttons/Buttons'
 
 import viewIcon from '@icons/view-icon.svg'
+import CV from '@files/cv.pdf'
+import useNavbarSeleted from '../hooks/useNavbarSeleted'
  
 const Experience = () => {
+
+    const ref = useRef(null);
+
+    useNavbarSeleted(ref)
+
   return (
-    <section className='experience-container'>
+    <section ref={ref} id='resume-link' className='experience-container'>
         <h2>Experiences</h2>
         <div className='experience-grid'>
             <div className='experience-grid-text'>
@@ -25,7 +32,7 @@ const Experience = () => {
                     always seeking to exceed expectations and achieve outstanding results.
                 </p>
                 <div className='experience-buttom-resume'>
-                    <ColorBorderButton icon={viewIcon} title={'View Full Resume'} />
+                    <ColorBorderButton icon={viewIcon} title={'View Full Resume'} link={CV} />
                 </div>
             </div>
             <div className='experience-grid-card'>
