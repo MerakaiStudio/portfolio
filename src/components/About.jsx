@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import ImageLabel from './labels/ImageLabel';
 
@@ -18,6 +18,7 @@ import CostaRicaFlag from '@icons/Flag_of_Costa_Rica.svg'
 
 import '@styles/About.scss'
 import ListLabel from './labels/ListLabel';
+import useNavbarSeleted from '../hooks/useNavbarSeleted';
 
 const frontendList = [
     {
@@ -65,8 +66,12 @@ const designerList = [
 ]
 
 const About = () => {
+    const ref = useRef(null);
+
+    useNavbarSeleted(ref)
+
   return (
-    <section className='about-container'>
+    <section ref={ref} id='about-link' className='about-container'>
         <div className='about-iam'>
             <div className='about-iam-text'>
                 <h4>
@@ -87,19 +92,19 @@ const About = () => {
         </div>
         <div className='about-table'>
             <ImageLabel
-                    image={Code} 
-                    title='Backend Developer' 
-                    subtitle='Software is the bridge between imagination & reality'
-                    description='These are my skills'
-                    >
-                        {backendList.map( element =>  
-                            <ListLabel 
-                                name={element.name} 
-                                icon={element.icon}
-                                key={Math.random()}
-                            />
-                        )}
-                    </ImageLabel>
+                image={Code} 
+                title='Backend Developer' 
+                subtitle='Software is the bridge between imagination & reality'
+                description='These are my skills'
+            >
+                {backendList.map( element =>  
+                    <ListLabel 
+                        name={element.name} 
+                        icon={element.icon}
+                        key={Math.random()}
+                    />
+                )}
+            </ImageLabel>
             <ImageLabel 
                 image={WebDeveloper} 
                 title='Frontend Developer' 

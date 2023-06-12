@@ -4,6 +4,7 @@ import {PrintButton } from './buttons/Buttons'
 
 import merakaiStudio from '@icons/merakai_studio_logo.svg'
 import printIcon from '@icons/print_icon.svg'
+import CV from '@files/cv.pdf'
 
 import '../styles/Header.scss'
 import SocialMedia from './SocialMedia'
@@ -28,7 +29,7 @@ const Header = () => {
                   <h4 className="header-subtitle" >Welcome to...</h4>
                   <h1 className="header-title">Merakai Studio</h1>
                   <h6 className="header-mono" >Web Developer | Graphic Designer</h6>
-                  <PrintButton icon={printIcon} title='Resume' />
+                  <PrintButton icon={printIcon} title='Resume' link={CV} />
                 </div>
             </div>
             <img className="header-logo" src={merakaiStudio} alt="logo" />

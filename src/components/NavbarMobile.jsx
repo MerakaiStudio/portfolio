@@ -22,10 +22,10 @@ const NavbarMobile = () => {
         </div>
         {showMenu &&
             <nav className="nav-mobile">
-                <ul className="nav-mobile-menu">
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Blog</a> </li>
-                    <li><a href="#">About</a></li>
+                <ul onClick={handleShowMenu} className="nav-mobile-menu">
+                    <li id='navbar-about-link'><a href="#about-link">About</a></li>
+                    <li id='navbar-resume-link'><a href="#resume-link">Resume</a></li>
+                    <li id='navbar-project-link'><a href="#project-link">Porfolio</a></li>
                 </ul>
             </nav>
         }

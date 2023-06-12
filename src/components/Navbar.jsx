@@ -16,7 +16,6 @@ export default function Navbar() {
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      // window height changed for the demo
       windowHeight > 600 ? setStickyClass('sticky-nav') : setStickyClass('');
     }
   };
@@ -31,14 +30,12 @@ export default function Navbar() {
                 Merakai Studio
             </a>
           </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Resume</a></li>
         </ul>
   
         <ul className='principal-menu-ul principal-menu-ul-right'>
-          <li><a href="#project-link">Porfolio</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li id='navbar-about-link'><a href="#about-link">About</a></li>
+          <li id='navbar-resume-link'><a href="#resume-link">Resume</a></li>
+          <li id='navbar-project-link'><a href="#project-link">Porfolio</a></li>
         </ul>
       </div>
     </nav>

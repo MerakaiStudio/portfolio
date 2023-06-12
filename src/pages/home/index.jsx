@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React from 'react'
 
 import Header from '@components/Header.jsx'
 import Navbar from '@components/Navbar.jsx'
@@ -8,20 +8,6 @@ import Projects from '@components/Projects'
 import NavbarMobile from '@components/NavbarMobile'
 
 const index = () => {
-  const [isIntersecting, setIsIntersecting] = useState(false);
-
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      setIsIntersecting(entry.isIntersecting);
-    });
-    console.log(isIntersecting);
-    console.log(ref.current, 'ref');
-    
-    observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <>
@@ -30,7 +16,7 @@ const index = () => {
       <Navbar />
       <About />
       <Experience />
-      <Projects ref={ref}/>
+      <Projects />
     </>
   )
 }

@@ -1,39 +1,32 @@
 import React, { useState } from 'react'
 
+
 import '@styles/buttons/Buttons.scss'
 
-const PrintButton = ({ icon, title}) => {
-    const handleClick = () => {
-        console.log('hola')
-    }
-  return (
-    <button 
-        className='print-button' 
-        type='button' 
-        onClick={handleClick}
-    >
-        <img className='print-icon' src={icon} alt='print' />
-        <span className='span-icon'>{title}</span>
-    </button>
-  )
-}
+const PrintButton = ({ icon, title, link}) => (
+    <a  className='print-button' href={link} download="Richard Layne - Resumé">
+      <button 
+           className='print-button'
+          type='button'
+      >
+          <img className='print-icon' src={icon} alt='print' />
+          <span className='span-icon'>{title}</span>
+      </button>
+    </a>
+)
 
-const ColorBorderButton = ({ icon, title }) => {
-  const handleClick = () => {
-    console.log('hola')
-  }
 
-  return (
+const ColorBorderButton = ({ icon, title, link }) => (
+  <a  href={link} target='_blank' download='Richard Layne - Resumé'>
     <button 
       className='color-border-button' 
       type='button' 
-      onClick={handleClick}
     >
       <img src={icon} alt='icon' />
       <span>{title}</span>
     </button>
-  )
-}
+  </a>
+)
 
 const SwitchButton = ({ onProject, setOnProject }) => {
   const handleProject = () => {
@@ -50,7 +43,7 @@ const SwitchButton = ({ onProject, setOnProject }) => {
         className={`switch-button-left ${onProject && 'switch-button-active'}`} 
         onClick={handleProject} 
       >
-        Projects
+        Development
       </button>
       <button 
         className={`switch-button-right ${!onProject && 'switch-button-active'}`} 
