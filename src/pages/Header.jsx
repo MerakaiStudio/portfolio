@@ -13,7 +13,6 @@ const Header = () => {
   return (
     <header className="header" id='header-section'>
         <div className="container">
-            <SocialMedia />  
             <div className="header-content">
                 <div className='hello-content'>
                   <div className='visible'>
@@ -29,7 +28,12 @@ const Header = () => {
                   <h4 className="header-subtitle" >Welcome to...</h4>
                   <h1 className="header-title">Merakai Studio</h1>
                   <h6 className="header-mono" >Web Developer | Graphic Designer</h6>
-                  <PrintButton icon={printIcon} title='Resume' link={CV} />
+                  <div className='header-social-media'>
+                    <SocialMedia />  
+                  </div>
+                  <div className='header-button'>
+                    <PrintButton icon={printIcon} title='Resume' link={CV} />
+                  </div>
                 </div>
             </div>
             <img className="header-logo" src={merakaiStudio} alt="logo" />
