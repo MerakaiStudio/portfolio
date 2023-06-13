@@ -1,10 +1,10 @@
 import React from 'react'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 
-import Home from '../pages/home'
-import About from '@components/About.jsx'
-import Experience from '@components/Experience.jsx'
-import Projects from '@components/Projects.jsx'
+import Home from '@pages/home'
+import About from '@pages/About.jsx'
+import Experience from '@pages/Experience.jsx'
+import Projects from '@pages/Projects.jsx'
 
 import '@styles/global.css'
 

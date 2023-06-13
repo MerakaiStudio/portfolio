@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Header from '@components/Header.jsx'
+import Header from '@pages/Header.jsx'
 import Navbar from '@components/Navbar.jsx'
-import About from '@components/About.jsx'
-import Experience from '@components/Experience'
-import Projects from '@components/Projects'
+import About from '@pages/About.jsx'
+import Experience from '@pages/Experience'
+import Projects from '@pages/Projects'
 import NavbarMobile from '@components/NavbarMobile'
 
 const index = () => {

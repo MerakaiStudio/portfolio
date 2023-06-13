@@ -4,10 +4,10 @@ import '@styles/labels/ListLabel.scss'
 
 const ListLabel = ({ name, key, icon }) => {
   return (
-      <li className='list-label' key={key}>
+      <span className='list-label' key={key}>
           <img src={icon} alt={`${name} icon`} />
           {name}
-      </li>
+      </span>
   )
 }
 
