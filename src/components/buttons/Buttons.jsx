@@ -17,7 +17,7 @@ const PrintButton = ({ icon, title, link}) => (
 
 
 const ColorBorderButton = ({ icon, title, link }) => (
-  <a  href={link} target='_blank' download='Richard Layne - Resumé'>
+  <a  href={link} target='_blank'>
     <button 
       className='color-border-button' 
       type='button' 
