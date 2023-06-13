@@ -6,18 +6,18 @@ import '@styles/labels/ImageLabel.scss'
 const ImageLabel = ({ image, title, subtitle, description, children }) => {
   return (
     <div className='image-label'>
-        <img src={image} alt="" />
         <div className='image-label-text'>
             <div className='image-label-text-content'>
+              <img src={image} alt="" />
               <h2>{title ? title : 'Title'}</h2>
               <span>{subtitle ? subtitle : 'Is just a little title'}</span>
               <hr />
             </div>
             <div className='skills-label'>
               <h4>{description}</h4>
-              <ul>
+              <p>
                 {children}
-              </ul>
+              </p>
             </div>
         </div>
     </div>

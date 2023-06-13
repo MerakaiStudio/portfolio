@@ -1,15 +1,14 @@
 .image-label {
     padding-top: 20px;
+    text-align: center;
     img {
         width: 30px;
         height: 30px;
         margin: 0;
-        border: 2px dotted #026773;
     }
 
     @media (max-width: 730px) {
         width: 100%;
-        text-align: center;
         
         img {
             width: 40%;
@@ -29,7 +28,6 @@
     @media (max-width: 730px) {
         display: block;
         margin: 0 20px 0 20px;
-        text-align: center;
         border-right: none;
     }
 }
@@ -40,7 +38,7 @@
         font-size: 20px;
         font-weight: 400;
         color: #212529;
-        margin-bottom: 20px;
+        margin: 20px 0;
     }
 
     span {
@@ -72,7 +70,8 @@
 }
 
 .skills-label {
-    list-style: none;
+    display: inline-block;
+    text-align: center;
     h4 {
         color: #3CA6A6;
     }
@@ -87,8 +86,17 @@
     @media (max-width: 1240px) {
         width: 200px;
         border-left: 2px solid #008F8C;
-        padding-left: 40px;
+        padding-left: 15%;
+        h4 {
+            margin: 0;
+        }
+    }
 
+
+    @media (max-width: 900px) {
+        width: 200px;
+        border-left: 2px solid #008F8C;
+        padding-left: 5%;
         h4 {
             margin: 0;
         }
@@ -98,10 +106,6 @@
         width: 100%;
         border-left: none;
         padding-left: 0;
-
-        li {
-            text-align: center;
-            display: block;
-        }
+        text-align: center;
     }
 }

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'
 
-import { SwitchButton } from './buttons/Buttons'
-import ProjectCard from './card/ProjectCard'
+import { SwitchButton } from '@components/buttons/Buttons'
+import ProjectCard from '@components/card/ProjectCard'
 import useNavbarSeleted from '@hooks/useNavbarSeleted'
 
 import Fondo from '@images/banner.jpg'
