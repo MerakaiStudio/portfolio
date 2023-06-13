@@ -4,7 +4,7 @@ import { SwitchButton } from '@components/buttons/Buttons'
 import ProjectCard from '@components/card/ProjectCard'
 import useNavbarSeleted from '@hooks/useNavbarSeleted'
 
-import Fondo from '@images/banner.jpg'
+import DNProject from '@images/dn-project.png'
 import DN from '@logos/DN.svg'
 import JOMA from '@logos/Joma_Logo.svg'
 import Saeta from '@logos/Saeta.svg'
@@ -44,7 +44,7 @@ const Projects = () => {
             tags= {['react', 'javascript', 'node', 'sass']}
           />
             <ProjectCard 
-              image={Fondo} 
+              image={DNProject} 
               description={'The DN eCommerce Store is a modern and user-friendly online shopping platform built using the React framework. It provides a seamless and engaging shopping experience for customers, allowing them to browse through a wide range of products, add items to their cart, and complete their purchases with ease.'} 
               title={'DN Ecommerce'} 
               tags= {['react', 'javascript', 'sanity', 'next', 'shopify']}

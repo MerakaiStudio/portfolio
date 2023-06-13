@@ -5,7 +5,7 @@ import JobPosition from '@components/labels/JobPosition'
 import { ColorBorderButton } from '@components/buttons/Buttons'
 
 import viewIcon from '@icons/view-icon.svg'
-import CV from '@files/cv.pdf'
+import CV from '@files/cv-picture.pdf'
 import useNavbarSeleted from '../hooks/useNavbarSeleted'
  
 const Experience = () => {
