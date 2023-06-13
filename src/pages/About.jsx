@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 
-import ImageLabel from './labels/ImageLabel';
+import ImageLabel from '@components/labels/ImageLabel';
 
 import Code from '@icons/code_icon.svg'
 import WebDeveloper from '@icons/web_developer_icon.svg'
@@ -17,8 +17,8 @@ import Illustrator from '@icons/illustrator-icon.svg'
 import CostaRicaFlag from '@icons/Flag_of_Costa_Rica.svg'
 
 import '@styles/About.scss'
-import ListLabel from './labels/ListLabel';
-import useNavbarSeleted from '../hooks/useNavbarSeleted';
+import ListLabel from '@components/labels/ListLabel';
+import useNavbarSeleted from '@hooks/useNavbarSeleted';
 
 const frontendList = [
     {

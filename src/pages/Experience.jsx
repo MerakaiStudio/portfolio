@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 
 import '@styles/Experience.scss'
-import JobPosition from './labels/JobPosition'
-import { ColorBorderButton } from './buttons/Buttons'
+import JobPosition from '@components/labels/JobPosition'
+import { ColorBorderButton } from '@components/buttons/Buttons'
 
 import viewIcon from '@icons/view-icon.svg'
 import CV from '@files/cv.pdf'

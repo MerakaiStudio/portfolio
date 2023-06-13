@@ -1,13 +1,13 @@
 import React from 'react'
 
-import {PrintButton } from './buttons/Buttons'
+import {PrintButton } from '@components/buttons/Buttons'
 
-import merakaiStudio from '@icons/merakai_studio_logo.svg'
+import merakaiStudio from '@logos/merakai_studio_logo.svg'
 import printIcon from '@icons/print_icon.svg'
 import CV from '@files/cv.pdf'
 
-import '../styles/Header.scss'
-import SocialMedia from './SocialMedia'
+import '@styles/Header.scss'
+import SocialMedia from '@components/SocialMedia'
 
 const Header = () => {
   return (

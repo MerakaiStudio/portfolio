@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import MerakaiLogo from '@icons/merakai_studio_logo.svg'
+import MerakaiLogo from '@logos/merakai_studio_logo.svg'
 
 import '@styles/Menu.scss'
 
