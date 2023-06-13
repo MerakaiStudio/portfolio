@@ -40,8 +40,8 @@ header {
     padding: 0;
     color: #589A8D;
     animation-name: example;
-    animation-duration: 4s;
-    transition-timing-function: ease;
+    animation-duration: 2s;
+    transition-timing-function: ease-in;
 
     @media (max-width: 600px){
       font-size: 4.5rem;
