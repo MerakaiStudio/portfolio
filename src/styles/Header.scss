@@ -1,5 +1,5 @@
 header {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(@images/banner.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(@images/movil-banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,22 +9,24 @@ header {
     min-height: 600px;
     max-width: 100%;
     display: flex;
-
-    @media (max-width: 700px) {
-      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(@images/movil-banner.jpg);
-    }
 }
 .container {
     position: relative;
+    display: flex;
     height: 100%;
     width: 100%;
     margin: 0 5% 0 5%;
+
+    @media (max-width: 1024px) {
+      justify-content: center;
+    }
 }
 
 .header-content {
-    margin-top: 150px;
+  display: block;
+  margin: auto 0;
     
-    @media (max-width: 690px) {
+    @media (max-width: 1024px) {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -72,19 +74,20 @@ header {
     margin: 0;
     margin-bottom: 60px;
 
-    @media (max-width: 690px) {
+    @media (max-width: 1024px) {
       margin-bottom: 30px;
     }
 }
 
 .header-logo {
     position: absolute;
-    top: 100px;
+    top: 21%;
     right: 0;
     width: 60%;
     height: 60%;
-
+    
     @media (max-width: 1150px) {
+      top: 30%;
       width: 40%;
       height: 40%;
     }
@@ -96,7 +99,7 @@ header {
 
 .header-button {
 
-  @media (max-width: 690px){
+  @media (max-width: 1024px){
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -105,13 +108,14 @@ header {
 
 .header-social-media {
   position: absolute;
-  top: 50px;
+  top: 80px;
 
-  @media (max-width: 690px){
+  @media (max-width: 1024px){
     position: relative;
     top: 0;
     display: flex;
     justify-content: center;
+    margin: 40px 0;
 
     img {
       width: 35px;
@@ -131,7 +135,7 @@ header {
   height:40px;
   position: relative;
 
-  @media (max-width: 690px) {
+  @media (max-width: 1024px) {
     display: none;
   }
   
