@@ -8,23 +8,17 @@ import '@styles/SocialMedia.scss'
 
 const SocialMedia = () => {
   return (
-    <ul className="social-icons">
-        <li className="social-media-icon">
-            <a href="https://www.linkedin.com/in/richard-layne-b7b217128/" target="_blank" rel="noopener noreferrer">
-                <img src={linkdinIcon} alt='icon' />
-            </a>
-        </li>
-        <li className="social-media-icon">
-            <a href="https://github.com/darklts" target="_blank" rel="noopener noreferrer">
-                <img src={githubIcon} alt='icon' className='icon-media' />
-            </a>
-        </li>
-        <li className="social-media-icon">
-            <a href="https://www.instagram.com/richi.layne" target="_blank" rel="noopener noreferrer">
-                <img src={instagramIcon} alt='icon' />
-            </a>
-        </li>
-    </ul>
+    <div className="social-icons">
+        <a className='social-media-icon' href="https://www.linkedin.com/in/richard-layne-b7b217128/" target="_blank" rel="noopener noreferrer">
+            <img src={linkdinIcon} alt='icon' />
+        </a>
+        <a className='social-media-icon' href="https://github.com/MerakaiStudio" target="_blank" rel="noopener noreferrer">
+            <img src={githubIcon} alt='icon' className='icon-media' />
+        </a>
+        <a className='social-media-icon' href="https://www.instagram.com/richi.layne" target="_blank" rel="noopener noreferrer">
+            <img src={instagramIcon} alt='icon' />
+        </a>
+    </div>
   )
 }
 

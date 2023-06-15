@@ -6,6 +6,7 @@ import About from '@pages/About.jsx'
 import Experience from '@pages/Experience'
 import Projects from '@pages/Projects'
 import NavbarMobile from '@components/NavbarMobile'
+import Footer from '@pages/Footer'
 
 const index = () => {
 
@@ -17,6 +18,7 @@ const index = () => {
       <About />
       <Experience />
       <Projects />
+      <Footer />
     </>
   )
 }
