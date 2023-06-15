@@ -32,7 +32,7 @@
 .experience-grid {
     box-sizing: content-box;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(49%, 2fr));
     gap: 20px;
 
     @media (max-width: 1030px) {
