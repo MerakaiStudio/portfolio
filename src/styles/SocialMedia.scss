@@ -10,7 +10,10 @@
     margin: 0 10px;
     
     &:hover {
-        filter: invert(25%) sepia(60%) saturate(856%) hue-rotate(135deg) brightness(65%) contrast(101%);
+        filter: invert(24%) sepia(0%) saturate(0%) hue-rotate(68deg) brightness(95%) contrast(93%);
+        @media (max-width: 1024px){
+            filter: invert(25%) sepia(60%) saturate(856%) hue-rotate(135deg) brightness(65%) contrast(101%);
+        }
     }
 }
 
