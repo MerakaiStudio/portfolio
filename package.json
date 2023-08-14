@@ -2,6 +2,9 @@
   "name": "web_portfolio",
   "version": "1.0.0",
   "main": "index.js",
+  "script": {
+    "build": "npm run build --workspace=app"
+  },
   "private": "true",
   "workspaces": [
     "api/*",
